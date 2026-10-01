@@ -1,0 +1,146 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - KEEPIE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="StyleKeepie.css" type="text/css">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container nav">
+        <a class="logo-link" href="home.html">
+            <img src="logo.png" class="site-logo" alt="KEEPIE Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="home.html#shop-by-group">Artist</a>
+            <a href="home.html#about">About</a>
+        </nav>
+
+        <div class="nav-tools">
+            <button class="search-btn" type="button" aria-label="Search"> &#9906; </button>
+            <form class="nav-search" id="navSearch">
+                <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+            </form>
+            <a href="wishlist.html" class="wishlist-btn" aria-label="Wishlist"> ♡ </a>
+            <a href="cart.html" class="cart-btn active" aria-label="Cart">
+                <span class="cart-icon"> &#128722; <b class="cart-count">0</b></span>
+            </a>
+            <button class="profile-btn" type="button" id="profileBtn" aria-label="Profile">&#128100;</button>
+            <button class="menu-btn" aria-label="Menu"> &#9776; </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="home.html#shop-by-group">Artist</a>
+        <a href="home.html#about">About</a>
+    </div>
+</header>
+
+<main>
+<section class="shop-heading">
+        <div class="container">
+            <p class="kicker">YOUR SHOPPING BAG</p>
+            <h1>CART</h1>
+            <p>Little things worth keeping, all in one place.</p>
+        </div>
+    </section>
+
+<section class="cart-section">
+    <div class="container cart-layout">
+        <div class="cart-items">
+            <div class="cart-items-top">
+                <h2>Your Items</h2>
+                <span id="cartItemCount">0 items</span>
+            </div>
+            <div id="cartItems"></div>
+        </div>
+
+        <aside class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">Rp0</strong>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Calculated at checkout</span>
+            </div>
+            <div class="summary-line"></div>
+            <div class="summary-total">
+                <span>Total</span>
+                <strong id="cartTotal">Rp0</strong>
+            </div>
+            <button class="checkout-btn" type="button" id="checkoutBtn"> CHECKOUT </button>
+            <a href="shop.html" class="continue-shopping"> Back to Shop </a>
+        </aside>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="logo-link footer-logo" href="home.html">
+                <img src="logo.png" alt="KEEPIE Logo" class="site-logo">
+            </a><p>little things worth keeping.</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All Products</a>
+            <a href="home.html#shop-by-group">Artists</a>
+            <a href="home.html#about">About</a>
+        </div>
+        <div>
+            <h4>Categories</h4>
+            <a href="shop.html?category=albums">Albums</a>
+            <a href="shop.html?category=merch">Merch</a>
+            <a href="shop.html?category=lightsticks">Lightsticks</a>
+            <a href="shop.html?category=dvd/media">DVD/Media</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>&copy; 2026 KEEPIE. For educational purposes.</span>
+        <span>Made with &#9825; for K-pop fans.</span>
+    </div>
+</footer>
+<div class="cart-notification" id="cartNotification">
+    Please select at least one item.
+</div>
+
+<div class="login-modal" id="loginModal">
+    <div class="login-box">
+        <button type="button" class="login-close" id="loginClose" > × </button>
+        <p class="login-kicker">WELCOME TO KEEPIE</p>
+        <h2>Login to continue</h2>
+        <p class="login-description">
+            Please log in before adding products to your cart or making a purchase.
+        </p>
+        <div class="login-form-group">
+            <label for="loginUsername">Username or Email</label>
+            <input type="text" id="loginUsername" placeholder="Your username or email" >
+        </div>
+        <div class="login-form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Your password" >
+        </div>
+        <p class="login-error" id="loginError"></p>
+        <button type="button" class="login-submit" id="loginSubmit" > LOGIN </button>
+    </div>
+</div>
+
+<script src="shop.js"></script>
+
+</body>
+</html>

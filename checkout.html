@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - KEEPIE</title>
+
+    <link rel="stylesheet" href="StyleKeepie.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a class="logo-link" href="home.html">
+            <img src="logo.png" class="site-logo" alt="KEEPIE Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="home.html#shop-by-group">Artist</a>
+            <a href="home.html#about">About</a>
+        </nav>
+
+        <div class="nav-tools">
+            <button class="search-btn" type="button" aria-label="Search"> &#9906; </button>
+            <form class="nav-search" id="navSearch">
+                <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+            </form>
+            <a href="wishlist.html" class="wishlist-btn" aria-label="Wishlist"> ♡ </a>
+            <a href="cart.html" class="cart-btn active" aria-label="Cart">
+                <span class="cart-icon"> &#128722; <b class="cart-count">0</b></span>
+            </a>
+            <button class="profile-btn" type="button" id="profileBtn" aria-label="Profile">&#128100;</button>
+            <button class="menu-btn" aria-label="Menu"> &#9776; </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="home.html#shop-by-group">Artist</a>
+        <a href="home.html#about">About</a>
+    </div>
+</header>
+
+<section class="shop-heading">
+    <div class="container">
+        <h1>CHECKOUT</h1>
+        <p>Almost there! Fill in your details to complete your KEEPIE order.</p>
+    </div>
+</section>
+
+<section class="checkout-section">
+    <div class="container checkout-layout" id="checkoutContent">
+        <div class="checkout-form">
+            <div class="checkout-box">
+                <h2>Customer Information</h2>
+                <div class="form-group">
+                    <label for="customerName">Name</label>
+                    <input type="text" id="customerName" placeholder="Your name" >
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" placeholder="08xxxxxxxxxx" >
+                </div>
+
+                <div class="form-group">
+                    <label for="customerAddress">Address</label>
+                    <textarea id="customerAddress" rows="4" placeholder="Your complete address"></textarea>
+                </div>
+            </div>
+            <div class="checkout-box">
+                <h2>Payment Method</h2>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="Bank Transfer" checked >
+                    <span>Bank Transfer</span>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="E-Wallet">
+                    <span>E-Wallet</span>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="Cash on Delivery">
+                    <span>Cash on Delivery</span>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="QRIS">
+                    <span>QRIS</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="checkout-summary">
+            <div class="checkout-box">
+                <h2>Your Order</h2>
+                <div id="checkoutItems"></div>
+                <div class="summary-line"></div>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="checkoutSubtotal">Rp0</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Calculated later</span>
+                </div>
+                <div class="summary-line"></div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">Rp0</strong>
+                </div>
+                <button type="button" class="checkout-btn" id="placeOrderBtn"> PLACE ORDER </button>
+                <a href="cart.html" class="continue-shopping"> Back to Cart </a>
+            </div>
+        </div>
+    </div>
+    <div class="container order-confirmation" id="orderConfirmation">
+        <div class="checkout-box">
+            <div id="confirmedOrderItems"></div>
+            <div class="summary-line"></div>
+            <div class="summary-total">
+                <span>Total</s>
+                <strong id="confirmedOrderTotal">Rp0</strong>
+            </div>
+            <div class="confirmation-message">
+                <h2>ORDER CONFIRMED</h2>
+                <p>Thank you for your order.</p>
+            </div>
+            <a href="shop.html" class="checkout-btn continue-shopping"> CONTINUE SHOPPING </a>
+        </div>
+    </div>
+</section>
+
+<div class="cart-notification" id="cartNotification">
+    Please complete your information.
+</div>
+
+<div class="login-modal" id="loginModal">
+    <div class="login-box">
+        <button type="button" class="login-close" id="loginClose" > × </button>
+        <p class="login-kicker">WELCOME TO KEEPIE</p>
+        <h2>Login to continue</h2>
+        <p class="login-description">
+            Please log in before adding products to your cart or making a purchase.
+        </p>
+        <div class="login-form-group">
+            <label for="loginUsername">Username or Email</label>
+            <input type="text" id="loginUsername" placeholder="Your username or email" >
+        </div>
+        <div class="login-form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Your password" >
+        </div>
+        <p class="login-error" id="loginError"></p>
+        <button type="button" class="login-submit" id="loginSubmit" > LOGIN </button>
+    </div>
+</div>
+
+<script src="shop.js"></script>
+
+</body>
+</html>

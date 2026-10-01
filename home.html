@@ -1,0 +1,397 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home - KEEPIE </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="StyleKeepie.css" type="text/css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a class="logo-link" href="home.html"><img src="logo.png" class="site-logo"></a>
+        <nav class="desktop-nav">
+            <a class="active" href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="home.html#shop-by-group">Artist</a>
+            <a href="home.html#about">About</a>
+        </nav>
+        <div class="nav-tools">
+            <button class="search-btn" type="button" aria-label="Search">&#9906;</button>
+            <form class="nav-search" id="navSearch">
+                <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+            </form>
+            <a href="wishlist.html" class="wishlist-btn" aria-label="wishlist">♡</a>
+            <a href="cart.html" class="cart-btn" aria-label="Cart"><span class="cart-icon"> &#128722;<b class="cart-count">0</b></span></a>
+            <button class="profile-btn" type="button" id="profileBtn" aria-label="Profile">&#128100;</button>
+            <button class="menu-btn" aria-label="Menu">&#9776;</button>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="home.html#shop-by-group">Artist</a>
+        <a href="home.html#about">About</a>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-copy">
+            <p class="kicker">YOUR LITTLE K-POP SHOP</p>
+            <h1>Collect what<br><em>means something.</em></h1>
+            <p class="hero-text">
+                Discover official K-pop goods made for fans, collectors,
+                and every special moment worth keeping.
+            </p>
+            <a class="btn btn-dark" href="shop.html">SHOP NOW</a>
+        </div>
+    </div>
+</section>
+
+<section class="category-band">
+    <div class="container section category-section">
+    <div class="category-header">
+        <p class="kicker">EXPLORE </p>
+        <h2>SHOP BY CATEGORY</h2>
+        <p>Find your next favorite little thing.</p>
+    </div>
+        <div class="category-grid">
+            <a class="category-item" href="shop.html?category=albums">
+                <div class="category-box cat-albums">
+                    <img src="album.png" alt="Albums" class="category-icon-img">
+                </div>
+                <span class="category-name">ALBUMS</span>
+                <span class="category-desc">Collect your favorites</span>
+            </a>
+
+            <a class="category-item" href="shop.html?category=merch">
+                <div class="category-box cat-merchandise">
+                    <img src="merchandise.png" alt="Official MD" class="category-icon-img">
+                </div>
+                <span class="category-name">Merch</span>
+                <span class="category-desc">Little things &amp; collectibles</span>
+            </a>
+
+            <a class="category-item" href="shop.html?category=lightsticks">
+                <div class="category-box cat-lightsticks">
+                    <img src="lightstick.png" alt="Lightsticks" class="category-icon-img">
+                </div>
+                <span class="category-name">LIGHTSTICKS</span>
+                <span class="category-desc">Bring the concert home</span>
+            </a>
+
+            <a class="category-item" href="shop.html?category=dvd/media">
+                <div class="category-box cat-dvdmedia">
+                    <img src="dvdmedia.png" alt="DVD/Media" class="category-icon-img">
+                </div>
+                <span class="category-name">DVD/Media</span>
+                <span class="category-desc">For your collection</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="container section">
+    <div class="section-head">
+        <div>
+            <p class="kicker">JUST DROPPED</p>
+            <h2>NEW RELEASES</h2>
+            <p>Fresh drops for your collection.</p>
+        </div>
+        <a class="view-link" href="shop.html?filter=new">View all</a>
+    </div>
+
+    <div class="product-grid">
+        <a class="product-card" href="product.html?product=1" data-product-id="1">
+            <div class="product-photo">
+                <span class="badge">NEW</span><span class="heart" data-product-id="1"> &#9825;</span>
+                <img src="https://en.mnetplusmerch.com/web/product/big/202608/77d83eed0f9fd78871eaca6d28cc9b85.jpg" class="product-img">
+            </div>
+            <p class="product-group">ALPHA DRIVE ONE</p>
+            <h3>ALPHA DRIVE ONE - 2nd Mini Album [Unbreakable : 少年Beast] (Hissing Ver.) (Random)</h3>
+            <strong>Rp285.766</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=2" data-product-id="2">
+            <div class="product-photo">
+                <span class="badge">NEW</span><span class="heart" data-product-id="2"> &#9825;</span>
+                <img src="https://i.pinimg.com/736x/ba/cd/47/bacd47ed489b3a46aad5fe99c3434fbf.jpg" class="product-img">
+            </div>
+            <p class="product-group">ENHYPEN</p>
+            <h3>ENHYPEN - 8th Mini Album THE SIN : BLISS</h3>
+            <strong>Rp388.000</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=3" data-product-id="3">
+            <div class="product-photo">
+                <span class="badge">NEW</span><span class="heart" data-product-id="3"> &#9825;</span>
+                <img src="https://i.pinimg.com/736x/39/43/08/3943081c1018b08b7e806b2ec2270108.jpg" class="product-img">
+            </div>
+            <p class="product-group">KiiiKiii</p>
+            <h3>KiiiKiii - The 3rd EP [WhyKiiiKiii] SNAPSHOT ver.</h3>
+            <strong>Rp1.362.450</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=4" data-product-id="4">
+            <div class="product-photo">
+                <span class="badge">NEW</span><span class="heart" data-product-id="4"> &#9825;</span>
+                <img src="https://i.pinimg.com/736x/1f/88/e7/1f88e73968ad3a13d654480c8b412fb5.jpg" class="product-img">
+            </div>
+            <p class="product-group">HEARTS2HEARTS</p>
+            <h3>HEARTS2HEARTS - The 2nd Mini Album [Lemon Tang] (Photobook Ver.)</h3>
+            <strong>Rp298.000</strong>
+        </a>
+    </div>
+</section>
+
+<section class="groups-band" id="shop-by-group">
+    <div class="container section">
+        <div class="section-head">
+            <div>
+                <p class="kicker">FIND YOUR FAVES </p>
+                <h2>SHOP BY ARTIST</h2>
+                <p>Browse products from your favorite artists.</p>
+            </div>
+        </div>
+
+        <div class="group-scroll-container">
+            <div class="group-track">
+                <a class="group-item" href="shop.html?group=alphadriveone">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/3d/17/e4/3d17e4671a543151f9c7dec17cc8c8da.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">ALPHA DRIVE ONE</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=bts">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/1200x/a9/f1/ea/a9f1ea6ccdd4980c99dd8baee9d8cbe6.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">BTS</span>
+                    </a>
+
+                <a class="group-item" href="shop.html?group=cortis">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/c2/b3/9b/c2b39b810b030048a4a2a748a4bba0ff.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">CORTIS</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=enhypen">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/a4/cb/b9/a4cbb91c7441c256dba96472b3757f2f.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">ENHYPEN</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=hearts2hearts">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/79/db/74/79db74cd44ca5c2ebd9c15b95bd6b8ca.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">HEARTS2HEARTS</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=illit">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/29/01/ae/2901aeef17a4381ca5fa66e396f19869.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">ILLIT</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=ive">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/1200x/51/da/a6/51daa644cd45152089a0c32e3e23a999.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">IVE</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=kiiikiii">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/4d/80/db/4d80db79898eb2b224d85000b3ace02d.jpg" class="group-img">
+                    </div>
+                        <span class="group-name">KiiiKiii</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=lesserafim">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/5c/13/bf/5c13bf37fbbac768f5382a1f93b47a56.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">LE SSERAFIM</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=lngshot">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/2b/59/7f/2b597f3d410b8467bdf4d1f2b4db43e2.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">LNGSHOT</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=seventeen">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/79/33/b9/7933b981bbcf4d7626b9b40b9a315b5c.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">SEVENTEEN</span>
+                </a>
+
+                <a class="group-item" href="shop.html?group=txt">
+                    <div class="group-avatar">
+                        <img src="https://i.pinimg.com/736x/33/79/9e/33799ea0cb477bab11f91ab8d3fb42dd.jpg" class="group-img">
+                    </div>
+                    <span class="group-name">TOMORROW X TOGETHER</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container section">
+    <div class="section-head">
+        <div>
+            <p class="kicker">FAN FAVORITES</p>
+            <h2>POPULAR PICKS</h2>
+            <p>Loved by fellow collectors.</p>
+        </div>
+        <a class="view-link" href="shop.html?filter=popular">View all</a>
+    </div>
+
+    <div class="product-grid">
+        <a class="product-card" href="product.html?product=5" data-product-id="5">
+            <div class="product-photo">
+                <span class="badge popular">POPULAR</span><span class="heart" data-product-id="5">&#9825;</span>
+                <img src="https://i.pinimg.com/1200x/25/65/44/25654432dec73aa7f041a34bcf419764.jpg" alt="Official Lightstick Ver. 2" class="product-img">
+            </div>
+            <p class="product-group">CORTIS</p>
+            <h3>CORTIS - The 2nd EP GREENGREEN playextended (CORTIS Ball SET Ver.)</h3>
+            <strong>Rp2.062.000</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=6" data-product-id="6">
+            <div class="product-photo">
+            <span class="badge popular">POPULAR</span><span class="heart" data-product-id="6">&#9825;</span>
+            <img src="https://i.pinimg.com/736x/e0/84/32/e08432169a80a53afdbaaf6c011c9276.jpg" class="product-img">
+            </div>
+            <p class="product-group">BTS</p>
+            <h3>BTS - Official Lightstick Ver.4</h3>
+            <strong>Rp1.550.000</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=7" data-product-id="7">
+            <div class="product-photo">
+                <span class="badge popular">POPULAR</span><span class="heart" data-product-id="7">&#9825;</span>
+                <img src="https://cdn-contents.weverseshop.io/public/shop/43b265eab5c2b5bc89a45ef41bae728a.png?w=720&q=95" class="product-img">
+            </div>
+            <p class="product-group">ENHYPEN</p>
+            <h3>ENHYPEN - [ENCHIN] Plush Keyring </h3>
+            <strong>Rp450.000</strong>
+        </a>
+
+        <a class="product-card" href="product.html?product=8" data-product-id="8">
+            <div class="product-photo">
+                <span class="badge popular">POPULAR</span><span class="heart" data-product-id="8">&#9825;</span>
+                <img src="https://i.pinimg.com/1200x/b7/aa/41/b7aa41b683fe184dc34773e92db7ea4a.jpg" class="product-img">
+            </div>
+            <p class="product-group">HEARTS2HEARTS</p>
+            <h3>HEARTS2HEARTS - The 2nd Mini Album [Lemon Tang] (Summer Kit Ver.)</h3>
+            <strong>Rp950.000</strong>
+        </a>
+    </div>
+</section>
+</main>
+
+<section class="about-intro" id="about">
+    <div class="container">
+        <div class="about-intro-inner">
+            <div class="about-intro-content">
+                <p class="about-label">ABOUT KEEPIE</p>
+                <h2>THINGS WORTH KEEPING.</h2>
+                <p class="about-text">
+                    Keepie is a fictional K-pop merchandise store made for
+                    fans and collectors to discover albums, official
+                    merchandise, lightsticks, and other media-related items
+                    from their favorite artists. From new releases to popular picks, Keepie brings together
+                    little things worth keeping in one place.
+                </p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <strong>CURATED COLLECTION</strong>
+                        <span>A selection of K-pop items for fans and collectors.</span>
+                    </div>
+                    <div class="about-feature">
+                        <strong>EASY TO EXPLORE</strong>
+                        <span>Browse products by category, artist, or collection.</span>
+                    </div>
+                    <div class="about-feature">
+                        <strong>MADE FOR FANS</strong>
+                        <span>A little space for things that make being a fan special.</span>
+                    </div>
+                </div>
+                <p class="about-note">
+                    *Keepie is a fictional online shop created for educational purposes.
+                </p>
+            </div>
+            <div class="about-intro-image">
+                <img src="about.jpg" alt="Keepie collection">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="logo-link footer-logo" href="index.html">
+                <img src="logo.png" alt="KEEPIE Logo" class="site-logo">
+            </a><p>little things worth keeping.</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All Products</a>
+            <a href="groups.html">Groups</a>
+            <a href="about.html">About</a>
+        </div>
+        <div>
+            <h4>Categories</h4>
+            <a href="shop.html?category=albums">Albums</a>
+            <a href="shop.html?category=merch">Merch</a>
+            <a href="shop.html?category=lightsticks">Lightsticks</a>
+            <a href="shop.html?category=photocards">DVD/Media</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        &copy; 2026 KEEPIE. For educational purposes. <span>Made with &#9825; for K-pop fans.</span>
+    </div>
+</footer>
+
+<div class="login-modal" id="loginModal">
+    <div class="login-box">
+        <button type="button" class="login-close" id="loginClose" > × </button>
+        <p class="login-kicker">WELCOME TO KEEPIE</p>
+        <h2>Login to continue</h2>
+        <p class="login-description">
+            Please log in before adding products to your cart or making a purchase.
+        </p>
+        <div class="login-form-group">
+            <label for="loginUsername">Username or Email</label>
+            <input type="text" id="loginUsername" placeholder="Your username or email" >
+        </div>
+        <div class="login-form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Your password" >
+        </div>
+        <p class="login-error" id="loginError"></p>
+        <button type="button" class="login-submit" id="loginSubmit" > LOGIN </button>
+    </div>
+</div>
+
+<script src="shop.js"></script>
+
+</body>
+</html>
