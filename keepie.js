@@ -1196,18 +1196,18 @@ if (artistSection && aboutSection) {
             .forEach(link => link.classList.remove("active"));
         if (position >= aboutSection.offsetTop) {
             document
-                .querySelector('.desktop-nav a[href="home.html#about"]')
+                .querySelector('.desktop-nav a[href="index.html#about"]')
                 .classList.add("active");
             } else if (
                 position >= artistSection.offsetTop &&
                 position < artistSection.offsetTop + artistSection.offsetHeight
             ) {
                 document
-                    .querySelector('.desktop-nav a[href="home.html#shop-by-group"]')
+                    .querySelector('.desktop-nav a[href="index.html#shop-by-group"]')
                     .classList.add("active");
             } else {
             document
-                .querySelector('.desktop-nav a[href="home.html"]')
+                .querySelector('.desktop-nav a[href="index.html"]')
                 .classList.add("active");
         }
     });
